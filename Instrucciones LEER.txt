@@ -52,12 +52,12 @@ RECORDATORIOS:
 
 ERRORES COMUNES:
 
--❌ Error: no such table: apoderado
- ➡ Ejecutar colegio.sql nuevamente.
+-Error: no such table: apoderado
+Ejecutar colegio.sql nuevamente.
 
--❌ Error: No module named streamlit
- ➡ Activar entorno y ejecutar:
- pip install streamlit pandas
+-Error: No module named streamlit
+Activar entorno y ejecutar:
+pip install streamlit pandas
 
--❌ Error: Database is locked
- ➡ Cerrar SQLiteStudio o cualquier app que use Colegio.db.
+-Error: Database is locked
+Cerrar SQLiteStudio o cualquier app que use Colegio.db.
