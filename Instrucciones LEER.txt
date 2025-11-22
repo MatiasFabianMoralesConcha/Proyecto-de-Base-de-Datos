@@ -1,0 +1,63 @@
+
+REQUISITOS PREVIOS:
+
+-Python 3.8 o superior
+-SQLiteStudio
+-Conexión a internet (solo la primera vez, para instalar librerías)
+
+
+INICIO:
+
+-Crear una carpeta "x" nueva en la misma ubicacion en la cual se ejecuta la CMD. 
+ Ejemplo: Disco C:
+-Los archivos app.py y Colegio.db deben estar obligatoriamente en la misma carpeta "x".
+
+
+PRIMERO:
+
+-Copiar la direccion/ubicacion exacta de la carpeta "x"
+-Abrir la CMD
+-escribir "cd" un espacio y copiar la direccion/ubicacion
+
+
+SEGUNDO (Crear un entorno virtual por seguridad dentro de la carpeta "x"):
+
+-copiar y pegar en la CMD dentro de la carpeta "x": "python -m venv venv"
+-Posteriormente copiar y pegar: "venv\Scripts\activate" en la misma carpeta "x"
+
+
+TERCERO (Instalar las dependencias necesarias)
+
+-pip install streamlit pandas en la misma CMD
+
+
+CUARTO (Ejecutar tu aplicación):
+
+-Una vez instaladas las librerías, escribe: "streamlit run app.py" y enter, lo cual deberia abrir
+ automaticamente tu navegador predeterminado con la pagina de Streamlit del codigo app.py
+
+
+FINALIZACIÓN:
+
+-Detener app: Ctrl + C
+-Desactivar entorno: "deactivate" en la CMD
+-Para volver a usarla: Activar entorno (source venv/bin/activate o .\venv\Scripts\Activate.ps1)
+ Ejecutar streamlit run app.py
+
+
+RECORDATORIOS:
+
+-Siempre estar atentos a las FK si se utiliza la base de datos desde 0.
+
+
+ERRORES COMUNES:
+
+-❌ Error: no such table: apoderado
+ ➡ Ejecutar colegio.sql nuevamente.
+
+-❌ Error: No module named streamlit
+ ➡ Activar entorno y ejecutar:
+ pip install streamlit pandas
+
+-❌ Error: Database is locked
+ ➡ Cerrar SQLiteStudio o cualquier app que use Colegio.db.
